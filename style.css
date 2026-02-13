@@ -1,0 +1,48 @@
+/* For testing */
+* {
+  outline: 2px solid red;
+}
+
+/* Remove default spacing */
+body {
+  margin: 0;
+}
+
+/* Fullscreen container */
+#main-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* for start screen */
+/* Full-screen modal */
+#start-modal {
+  position: fixed;
+  inset: 0; /* top:0; left:0; bottom:0; right:0 */
+  background-color: #e0115f; /* Valentine red */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer; /* shows it’s clickable */
+  z-index: 10000;
+}
+
+/* Modal content wrapper */
+#start-content {
+  color: white;
+  padding: 2rem;
+}
+
+/* First line: bigger */
+#line1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Second line: smaller */
+#line2 {
+  font-size: 1.2rem;
+  font-style: italic;
+}
