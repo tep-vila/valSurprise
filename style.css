@@ -1,6 +1,6 @@
 /* For testing */
 * {
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +9,10 @@
 /* Remove default spacing */
 body {
   margin: 0;
+  user-select: none; /* standard */
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
 }
 
 /* Fullscreen container */
@@ -83,6 +87,7 @@ body {
   text-align: center;
   cursor: pointer; /* shows it’s clickable */
   z-index: 10000;
+  transition: opacity 1.5s ease;
 }
 
 /* Modal content wrapper */
@@ -102,4 +107,10 @@ body {
 #line2 {
   font-size: 1.2rem;
   font-style: italic;
+}
+
+#start-image img {
+  width: 30vh; /* adjust size as needed */
+  height: auto;
+  object-fit: contain;
 }
