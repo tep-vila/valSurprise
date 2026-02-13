@@ -56,6 +56,20 @@ body {
   text-align: center; /* fallback */
 }
 
+#character-portrait {
+  position: absolute; /* position relative to game-screen */
+  top: 0; /* place above the dialogue box (which is 30% height) */
+  right: 10vw; /* small gap from right edge */
+  width: 15vw; /* adjust width as needed */
+  height: 40vh; /* upright, height taller than width */
+  background-image: url("assets/guyNeutral1.png"); /* your character image */
+  background-size: contain; /* fill the div completely */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+
+  transform: translateY(-100%);
+}
+
 /* for start screen */
 
 /* Full-screen modal */
