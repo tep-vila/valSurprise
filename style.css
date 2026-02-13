@@ -1,6 +1,9 @@
 /* For testing */
 * {
   outline: 2px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Remove default spacing */
@@ -12,9 +15,49 @@ body {
 #main-screen {
   width: 100vw;
   height: 100vh;
+  background-image: url("assets/scene.jpg"); /* replace with your file path */
+  background-size: cover; /* stretch to cover entire screen */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* no tiling */
+  position: relative;
+}
+
+#dialogue-box {
+  position: absolute; /* relative to #game-screen */
+  bottom: 0; /* stick to bottom */
+  left: 0;
+  width: 100vw;
+  height: 30%; /* 30% of screen height */
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  color: white;
+  padding: 1rem 5vw; /* space inside the box */
+  display: flex;
+  align-items: center; /* vertical centering */
+  font-size: 3vw;
+  font-family: sans-serif;
+}
+
+#name-box {
+  position: absolute; /* relative to dialogue-box parent */
+  top: 0; /* floats above dialogue box */
+  left: 0;
+  background-color: rgba(224, 17, 95, 0.7); /* red with 70% opacity */
+  color: black;
+  padding: 0.3rem 1rem;
+
+  font-weight: bold;
+  font-size: 3vw;
+  transform: translateY(-100%);
+  width: 10vw;
+
+  display: flex; /* make it a flex container */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center; /* fallback */
 }
 
 /* for start screen */
+
 /* Full-screen modal */
 #start-modal {
   position: fixed;
