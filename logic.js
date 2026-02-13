@@ -18,12 +18,10 @@ function hideStartModalAndPlayMusic() {
 
   // Remove event listeners so it doesn't fire again
   startModal.removeEventListener("click", hideStartModalAndPlayMusic);
-  startModal.removeEventListener("touchstart", hideStartModalAndPlayMusic);
 }
 
 // Listen for click or touch
 startModal.addEventListener("click", hideStartModalAndPlayMusic);
-startModal.addEventListener("touchstart", hideStartModalAndPlayMusic);
 
 // test
 function hideStartModal() {
@@ -33,7 +31,6 @@ function hideStartModal() {
 
 // Listen for both click (desktop) and touch (mobile)
 startModal.addEventListener("click", hideStartModal);
-startModal.addEventListener("touchstart", hideStartModal);
 
 // test
 // Map portrait tags to image paths
@@ -124,12 +121,10 @@ function nextDialogue() {
     console.log("End of dialogue");
     // Optional: remove click listener or trigger end screen
     mainScreen.removeEventListener("click", nextDialogue);
-    mainScreen.removeEventListener("touchstart", nextDialogue);
   }
 }
 
 // Listen for click or touch anywhere on the main screen
 mainScreen.addEventListener("click", nextDialogue);
-mainScreen.addEventListener("touchstart", nextDialogue);
 
 // Optionally, start with the first line already visible
